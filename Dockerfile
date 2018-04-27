@@ -9,7 +9,8 @@ LABEL maintainer="anoma"
 RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
-	ngircd
+	ngircd \
+	ngircd-doc
 
 # copy local files
 COPY root/ /
